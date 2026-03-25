@@ -7,18 +7,18 @@ class Vix < Formula
   on_macos do
     on_arm do
       url "https://github.com/kirby88/vix/releases/download/v0.1.2/vix-darwin-arm64.tar.gz"
-      sha256 "4d69be17346686a8c5f7c2aa9b5ab797da2cf4612c4854348864a22dfe2e0d3f"
+      sha256 "e96839b6b9685445aeaa18e620a730f8fe37c633ebe86a124bc557587ab2a167"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kirby88/vix/releases/download/v0.1.2/vix-linux-arm64.tar.gz"
-      sha256 "71b5d8ee881f22d90d48c522f1417f887bbd9f1109b8af53c34d6c12fa420872"
+      sha256 "8d24a461eeb02aa39359085eda2f3fcf2e94dfb654b7b02c2fbe79d2a83bcbf9"
     end
     on_intel do
       url "https://github.com/kirby88/vix/releases/download/v0.1.2/vix-linux-amd64.tar.gz"
-      sha256 "678c050ca55cd3f4b896676b3f217712a62b05e0f30d894e421d0fb17706923f"
+      sha256 "ab198a4abb0b34ef9d43807f60c0a50ead330d36eec7629079dd29c4c818d41b"
     end
   end
 
