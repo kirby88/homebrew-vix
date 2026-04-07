@@ -7,31 +7,31 @@ class Vix < Formula
   on_macos do
     on_arm do
       url "https://github.com/kirby88/vix-releases/releases/download/v0.1.8/vix-darwin-arm64.tar.gz"
-      sha256 "ec3979bf13627daf59b065018120ede288f9f6d78af3eb9aff82fdd3ca3d9c03"
+      sha256 "c64bd66f5e7f2df02a768c4dd1e4e178299179f05c0b11294ed5665e667f97da"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kirby88/vix-releases/releases/download/v0.1.8/vix-linux-arm64.tar.gz"
-      sha256 "f2b483cfc253726491ef6f70be68294c2869bea460e175c3c57c0652bc148424"
+      sha256 "49e054fbdfa906c50c3101b7abb0ec92edfdc1272b307f988538a87547e89d8f"
     end
     on_intel do
       url "https://github.com/kirby88/vix-releases/releases/download/v0.1.8/vix-linux-amd64.tar.gz"
-      sha256 "74e81a971b77c9d43c91443e934ef1abcbda3e03f4c4d3518625ef7049af06f8"
+      sha256 "ace11b593d4c9be517e2f688f8362bffcc776607ab4254752a5c6ce3baca9f43"
     end
   end
 
   def install
     bin.install "vix"
-    bin.install "vix-daemon"
+    bin.install "vixd"
   end
 
   service do
-    run [opt_bin/"vix-daemon"]
+    run [opt_bin/"vixd"]
     keep_alive true
-    log_path var/"log/vix-daemon.log"
-    error_log_path var/"log/vix-daemon.log"
+    log_path var/"log/vixd.log"
+    error_log_path var/"log/vixd.log"
   end
 
   test do
